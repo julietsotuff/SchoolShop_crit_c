@@ -1,0 +1,379 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | SchoolShop</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #f8f9fc;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        header {
+            background: #263b64;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background: #172b4d;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+            display: inline-block;
+            padding: 7px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+            transform: translateY(-3px);
+        }
+
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+            background: #263b64;
+            overflow: hidden;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 330px;
+            object-fit: cover;
+            opacity: 0.55;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+        }
+
+        .hero-text h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 19px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 35px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #263b64;
+            margin-bottom: 25px;
+        }
+
+        .intro {
+            text-align: center;
+            line-height: 1.9;
+            font-size: 17px;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(230px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px #00000012;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px #00000025;
+        }
+
+        .card h2 {
+            color: #263b64;
+        }
+
+        .card p {
+            line-height: 1.7;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(170px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #00000012;
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
+        }
+
+        .values {
+            background: #e8eef8;
+            padding: 30px;
+            border-radius: 15px;
+            line-height: 2;
+            margin-top: 35px;
+        }
+
+        .cta {
+            background: #263b64;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            border-radius: 15px;
+            margin-top: 40px;
+        }
+
+        .cta a {
+            display: inline-block;
+            background: #ffd166;
+            color: #263b64;
+            padding: 13px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .cta a:hover {
+            background: white;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #172b4d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .hero-text h1 {
+                font-size: 29px;
+            }
+
+            nav a {
+                margin: 4px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>SchoolShop</h1>
+    <p>Your School Essentials, All in One Place!</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="Categories.html">Categories</a>
+    <a href="Cart.html">Cart</a>
+    <a href="Contact.html">Contact</a>
+    <a href="About.html">About Us</a>
+</nav>
+
+<section class="hero">
+    <img src="school-banner.png" alt="SchoolShop banner">
+    <div class="hero-text">
+        <h1>Welcome to SchoolShop!</h1>
+        <p>Making school shopping easier, simpler and affordable.</p>
+    </div>
+</section>
+
+<div class="container">
+
+    <h1 class="section-title">Who We Are</h1>
+
+    <div class="intro">
+        <p>
+            SchoolShop is a student-friendly online shopping
+            platform created to make finding and buying school
+            accessories easier and more convenient. We understand
+            that students need different stationery items every
+            day to complete their schoolwork, stay organised and
+            express their creativity.
+        </p>
+
+        <p>
+            Our website brings essential school supplies together
+            in one place, allowing students to explore different
+            products without having to search through multiple
+            shops. We aim to make the shopping experience simple,
+            enjoyable and accessible while helping students find
+            useful items for their everyday learning activities.
+        </p>
+
+        <p>
+            Whether you need a pencil for writing, a ruler for
+            mathematics, a notebook for taking notes or
+            highlighters for organising your revision, SchoolShop
+            is here to help you find your school essentials!
+        </p>
+    </div>
+
+    <h1 class="section-title">What Makes Us Special?</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>🎯 Our Mission</h2>
+            <p>
+                Our mission is to provide students with a simple
+                and convenient way to find affordable and useful
+                school accessories. We want to make preparing for
+                school easier by bringing essential products
+                together in one organised online platform.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>🌟 Our Vision</h2>
+            <p>
+                Our vision is to become a trusted student-friendly
+                online school shop where learners can easily
+                discover the stationery they need. We hope to
+                encourage organisation, creativity and a positive
+                learning experience for every student.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>💙 Our Values</h2>
+            <p>
+                We value affordability, convenience, simplicity
+                and customer satisfaction. We believe every
+                student should have an easy way to explore
+                essential school supplies and make informed
+                shopping choices.
+            </p>
+        </div>
+
+    </div>
+
+    <h1 class="section-title" style="margin-top:50px;">
+        Explore Our School Essentials
+    </h1>
+
+    <p class="intro">
+        From everyday writing materials to creative stationery,
+        explore some of the products available at SchoolShop.
+    </p>
+
+    <div class="products">
+
+        <div class="product-card">
+            <img src="pencils.png" alt="School pencils">
+            <h3>Pencils</h3>
+            <p>Perfect for writing, drawing and everyday learning.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="pens.png" alt="School pens">
+            <h3>Pens</h3>
+            <p>Useful writing essentials for notes and assignments.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="notebook.png" alt="School notebook">
+            <h3>Notebooks</h3>
+            <p>Keep your notes, ideas and schoolwork organised.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="highlighters.png" alt="Highlighters">
+            <h3>Highlighters</h3>
+            <p>Make important information stand out while revising.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="ruler.png" alt="School ruler">
+            <h3>Rulers</h3>
+            <p>Helpful for measurements, geometry and drawing.</p>
+        </div>
+
+    </div>
+
+    <div class="values">
+        <h2>Why Choose SchoolShop?</h2>
+        <p>
+            ✔ Easy-to-explore product categories
+        </p>
+        <p>
+            ✔ A variety of useful school essentials
+        </p>
+        <p>
+            ✔ A simple and organised shopping experience
+        </p>
+        <p>
+            ✔ Designed with students and their needs in mind
+        </p>
+    </div>
+
+    <div class="cta">
+        <h2>Ready to Explore SchoolShop?</h2>
+        <p>
+            Discover your school essentials and make your
+            shopping experience easier!
+        </p>
+        <a href="Categories.html">Explore Products →</a>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 SchoolShop | All Rights Reserved</p>
+    <p>Making School Shopping Simple!</p>
+</footer>
+
+</body>
+</html>
